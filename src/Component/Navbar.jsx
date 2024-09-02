@@ -3,7 +3,7 @@
 const Navbar = () => {
  
   return (
-    <div className="navbar bg-[#13361d]">
+    <div className="navbar bg-[#0e2815] mx-auto px-40">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,22 +24,22 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-white "
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-white  "
           >
-            <li>Home</li>
-            <li>About</li>
-            <li>Popular</li>
-            <li>Review</li>
+            <li className="italic">Home</li>
+            <li className="italic">About</li>
+            <li className="italic">Popular</li>
+            <li className="italic">Review</li>
           </ul>
         </div>
-        <a className="text-white  text-3xl ">IndorePlants.</a>
+        <a className="text-white font-bold  lg:text-3xl text-xl italic ">IndorePlants.</a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 flex justify-between gap-5 text-lg text-white font-bold">
-          <li>Home</li>
-          <li>About</li>
-          <li>Popular</li>
-          <li>Review</li>
+          <li className="italic  ">Home</li>
+          <li className="italic hover:underline">About</li>
+          <li className="italic hover:underline">Popular</li>
+          <li className="italic hover:underline">Review</li>
         </ul>
       </div>
     </div>
