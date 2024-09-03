@@ -1,9 +1,6 @@
 
 import Home from "./Component/Home"
-
-
-
-
+import Navbar from "./Component/Navbar"
 
 
 function App() {
@@ -11,6 +8,7 @@ function App() {
 
   return (
     <>
+    <Navbar></Navbar>
     <Home></Home>
     </>
   )
