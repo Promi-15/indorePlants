@@ -3,7 +3,16 @@
 const Navbar = () => {
  
   return (
-    <div className="navbar bg-[#0e2815] mx-auto px-40">
+    <>
+       <style>
+    {`
+      html {
+        scroll-behavior: smooth;
+      }
+    `}
+  </style>
+
+    <div className="navbar bg-[#0e2815] mx-auto px-40  fixed top-0 w-full z-50 border-y-2">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,23 +35,25 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[100] mt-3 w-52 p-2 shadow text-black  "
           >
-            <li className="italic">Home</li>
-            <li className="italic">About</li>
-            <li className="italic">Popular</li>
-            <li className="italic">Review</li>
+            <li className="italic"><a href="#banner">Home</a></li>
+            <li className="italic"><a href="#about">About</a></li>
+            <li className="italic"><a href="#popular">Popular</a></li>
+            <li className="italic"><a href="#review">Review</a></li>
           </ul>
         </div>
         <a className="text-white font-bold  lg:text-3xl text-xl italic ">IndorePlants.</a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 flex justify-between gap-5 text-lg text-white font-bold">
-          <li className="italic  ">Home</li>
-          <li className="italic hover:underline">About</li>
-          <li className="italic hover:underline">Popular</li>
-          <li className="italic hover:underline">Review</li>
+        
+        <li className="italic"><a href="#banner">Home</a></li>
+            <li className="italic"><a href="#about">About</a></li>
+            <li className="italic"><a href="#popular">Popular</a></li>
+            <li className="italic"><a href="#review">Review</a></li>
         </ul>
       </div>
-    </div>
+      </div>
+      </>
   );
 };
 

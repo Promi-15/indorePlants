@@ -6,11 +6,19 @@ import { CiInstagram } from "react-icons/ci";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { PiPottedPlantLight } from "react-icons/pi";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const Banner = () => {
   return (
-    <div className="bg-[#0e2815] px-10">
+    <div className="bg-[#0e2815] px-10" id="banner">
       <div className="min-h-screen flex flex-col-reverse lg:flex-row md:flex-row mx-auto max-w-5xl items-center justify-center relative gap-9 ">
-        <div className="lg:w-1/2 z-10">
+        <div
+          className="lg:w-1/2 z-10"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <h1 className=" text-xl lg:text-5xl font-bold text-white">
             <span className="text-yellow-600">Plants</span> make a positive{" "}
             <span className="text-yellow-600">impact</span> on your environment
@@ -43,7 +51,11 @@ const Banner = () => {
             <FaXTwitter />
           </div>
         </div>
-        <div className="w-72 py-5 lg:w-1/2 relative z-10">
+        <div
+          className="w-72 py-5 lg:w-1/2 relative z-10"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <img src="/public/home.png" className="" />
           <div className="flex justify-between w-full items-center bg-transparent absolute top-1">
             <PiPlant className="text-3xl lg:text-5xl text-gray-500 rotate-45" />
