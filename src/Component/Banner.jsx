@@ -56,7 +56,7 @@ const Banner = () => {
           data-aos="fade-left"
           data-aos-duration="2000"
         >
-          <img src="/public/home.png" className="" />
+          <img src="home.png" className="" />
           <div className="flex justify-between w-full items-center bg-transparent absolute top-1">
             <PiPlant className="text-3xl lg:text-5xl text-gray-500 rotate-45" />
 

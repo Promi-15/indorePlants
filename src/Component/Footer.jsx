@@ -6,7 +6,7 @@ import { FaLeaf } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="relative  ">
-      <div className="bg-green-800   absolute lg:-top-10  px-10 py-6 rounded-md w-[1200px] lg:left-32">
+      <div className="bg-green-800   absolute lg:-top-10  px-10 py-6 rounded-md lg:w-[1200px] lg:left-32">
         <h1 className="text-white text-4xl py-2">
           <span className="text-yellow-600">Subscribe</span> To Our newsletter
         </h1>
